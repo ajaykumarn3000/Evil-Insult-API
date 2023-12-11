@@ -33,7 +33,12 @@
         </h2>
         <div class="w-full flex justify-center">
           <button type="submit" class="border-[1.5px] font-semibold rounded-md px-6 py-2 mt-6">
-            Click Here
+            <% if (locals.data) { %> 
+              More!
+            <%} else {%>
+              Click Here 
+            <%}%>
+            
           </button>
         </div>
       </form>
